@@ -1,0 +1,2 @@
+[_]!abc@test PRIVMSG #chat :Test
+c.m!callum@lynx.io PRIVMSG #chat :Hello!

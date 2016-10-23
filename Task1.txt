@@ -1,0 +1,2 @@
+*this is italic*
+**bold text (not italic)**
