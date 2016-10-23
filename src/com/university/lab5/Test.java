@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * Created by Andrey on 23.10.2016.
  */
+
 public class Test {
 
     public static void main(String[] args) throws IOException{
@@ -16,6 +17,7 @@ public class Test {
         Test5();
         Test6();
         Test7();
+        Test8();
         Test9();
     }
     public static void Test1()throws IOException {
@@ -86,6 +88,16 @@ public class Test {
         String temp;
         for(int i=0;i<list.size();i++){
             temp = list.get(i) +( Regex.isCorrectHtmlColours(list.get(i))? " - correctly":" - not correctly");;
+            System.out.println(temp);
+        }
+        System.out.println();
+    }
+    public static void Test8()throws IOException{
+        List<String> list = Reader.readFile("Task8.txt");
+        System.out.println("Test task 8: ");
+        String temp;
+        for(int i=0;i<list.size();i++){
+            temp = list.get(i) + " => " + Regex.tokens(list.get(i));
             System.out.println(temp);
         }
         System.out.println();
